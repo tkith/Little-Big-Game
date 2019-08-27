@@ -1,4 +1,4 @@
 # Little-Big-Game
-School project - Simple game in C++
+[C++] School project - Space invaders like
 
 Space invaders like with ennemies and obstacles
