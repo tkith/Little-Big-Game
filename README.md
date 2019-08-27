@@ -1,2 +1,3 @@
 # Little-Big-Game
-Space invaders like (C++)
+Simple game in C++
+Space invaders like with ennemies and obstacles

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Little Big Game" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Little Big Game" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="src/Utility" />
+					<Add directory="src/Entity" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Little Big Game" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="src/Utility" />
+					<Add directory="src/Entity" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++11" />
+			<Add directory="SFML/include" />
+		</Compiler>
+		<Linker>
+			<Add library="SFML/lib/libsfml-graphics.a" />
+			<Add library="SFML/lib/libsfml-audio.a" />
+			<Add library="SFML/lib/libsfml-window.a" />
+			<Add library="SFML/lib/libsfml-system.a" />
+			<Add directory="SFML/lib" />
+		</Linker>
+		<Unit filename="src/Entity/AbstractEntity.cpp" />
+		<Unit filename="src/Entity/AbstractEntity.hh" />
+		<Unit filename="src/Entity/Character.cpp" />
+		<Unit filename="src/Entity/Character.hh" />
+		<Unit filename="src/Entity/Destruction.cpp" />
+		<Unit filename="src/Entity/Destruction.hh" />
+		<Unit filename="src/Entity/Ennemy.cpp" />
+		<Unit filename="src/Entity/Ennemy.hh" />
+		<Unit filename="src/Entity/Meteor.cpp" />
+		<Unit filename="src/Entity/Meteor.hh" />
+		<Unit filename="src/Entity/NormalEnnemy.cpp" />
+		<Unit filename="src/Entity/NormalEnnemy.hh" />
+		<Unit filename="src/Entity/Player.cpp" />
+		<Unit filename="src/Entity/Player.hh" />
+		<Unit filename="src/Entity/PlayerProjectile.cpp" />
+		<Unit filename="src/Entity/PlayerProjectile.hh" />
+		<Unit filename="src/Entity/Projectile.cpp" />
+		<Unit filename="src/Entity/Projectile.hh" />
+		<Unit filename="src/Entity/Scene.cpp" />
+		<Unit filename="src/Entity/Scene.hh" />
+		<Unit filename="src/Entity/Score.cpp" />
+		<Unit filename="src/Entity/Score.hh" />
+		<Unit filename="src/Entity/SmallEnnemy.cpp" />
+		<Unit filename="src/Entity/SmallEnnemy.hh" />
+		<Unit filename="src/Entity/SmallEnnemyProjectile.cpp" />
+		<Unit filename="src/Entity/SmallEnnemyProjectile.hh" />
+		<Unit filename="src/Entity/Stage.cpp" />
+		<Unit filename="src/Entity/Stage.hh" />
+		<Unit filename="src/Entity/StrongEnnemy.cpp" />
+		<Unit filename="src/Entity/StrongEnnemy.hh" />
+		<Unit filename="src/Factory/MonsterFactory.cpp" />
+		<Unit filename="src/Factory/MonsterFactory.hh" />
+		<Unit filename="src/Interface/IObservable.hh" />
+		<Unit filename="src/Interface/IObserver.hh" />
+		<Unit filename="src/Interface/ISerializable.hh" />
+		<Unit filename="src/Utility/Constants.hh" />
+		<Unit filename="src/Utility/Event.hh" />
+		<Unit filename="src/Utility/EventHandler.cpp" />
+		<Unit filename="src/Utility/EventHandler.hh" />
+		<Unit filename="src/Utility/ResourceHandler.hh" />
+		<Unit filename="src/Utility/ResourceManager.hh" />
+		<Unit filename="src/Utility/TimeManager.cpp" />
+		<Unit filename="src/Utility/TimeManager.hh" />
+		<Unit filename="src/main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
